@@ -1,0 +1,88 @@
+# Zephyr build output
+build/
+build-*/
+out/
+twister-out/
+
+# Zephyr generated files
+zephyr/.config
+zephyr/.config.old
+zephyr/include/generated/
+zephyr/modules/
+zephyr/zephyr.*
+zephyr/*.map
+zephyr/*.lst
+zephyr/*.bin
+zephyr/*.hex
+zephyr/*.elf
+zephyr/*.uf2
+
+# CMake / Ninja
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+rules.ninja
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Kconfig
+.config
+.config.old
+autoconf.h
+
+# West / Zephyr workspace metadata
+.west/
+west.yml.bak
+manifest-rev
+
+# Python virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs and serial output
+*.log
+logs/
+minicom*.cap
+serial*.txt
+uart*.txt
+
+# Firmware binaries / generated artifacts
+*.elf
+*.hex
+*.bin
+*.uf2
+*.map
+*.lst
+*.dts
+*.dtb
+*.dtbo
+
+# Nordic / flashing / debugging artifacts
+*.jlink
+*.jlinklog
+JLink.log
+*.rtt
+*.svd
+
+# VS Code / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.bak
+*.orig

@@ -1,0 +1,55 @@
+# Zephyr build outputs
+build/
+*/build/
+**/build/
+
+# Test folders
+test/
+*/test/
+**/test/
+
+# Zephyr / west generated files
+.west/
+zephyr/
+modules/
+tools/
+bootloader/
+.zepyhr/
+twister-out/
+outdir/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Build artifacts
+*.elf
+*.hex
+*.bin
+*.map
+*.uf2
+*.lst
+*.o
+*.obj
+*.a
+*.so
+*.d
+*.gcno
+*.gcda
+
+# Logs
+*.log
+*.trace
+
+# Python cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# VS Code / editor settings
+.vscode/
+.idea/

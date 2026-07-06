@@ -56,6 +56,7 @@ This implementation is designed for studying:
 
 If you use this work, please cite:
 
+```
 @misc{BLEConnectionPQKE,
 author = {Liu, Tao and Ramachandran, Gowri and Jurdak, Raja},
 title = {BLE Connection-Based Post-Quantum Key Exchange (PQKE)},
@@ -63,9 +64,11 @@ year = {2026},
 howpublished = {\url{https://github.com/EsperLiu/BLE_Connection_PQKE}},
 note = {Supporting implementation of ML-KEM-based post-quantum key exchange over Bluetooth Low Energy. Used for the experimental evaluation in the SenSys 2026 paper: ``On the Energy Cost of Post-Quantum Key Establishment in Wireless Low-Power Personal Area Networks''.}
 }
+```
 
 or the main energy study paper: 
 
+```
 @inproceedings{10.1145/3774906.3802784,
 author = {Liu, Tao and Ramachandran, Gowri and Jurdak, Raja},
 title = {On the Energy Cost of Post-Quantum Key Establishment in Wireless Low-Power Personal Area Networks},
@@ -80,3 +83,4 @@ doi = {10.1145/3774906.3802784},
 url = {https://doi.org/10.1145/3774906.3802784},
 keywords = {Post-Quantum Cryptography, Internet of Things, Personal Area Networks, Energy Estimation, Bluetooth Low Energy}
 }
+```

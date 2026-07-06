@@ -20,25 +20,11 @@ Each directory contains its own detailed technical README.
 
 ---
 
-## Scope
-
-This project focuses on:
-
-- BLE connection-based PQKE protocol design
-- ML-KEM integration into BLE GATT-based pairing flow
-- Fragmentation and MTU-aware transport of PQC artifacts
-- Empirical evaluation of computation vs communication overhead
-
----
-
 ## Warning
 
 This is a **research prototype**.
 
-It must not be used for:
-- production security systems
-- encryption of sensitive or real user data
-- deployment in safety-critical environments
+It must not be used for encryption of sensitive or real user data
 
 Cryptographic correctness is assumed at the algorithm level (ML-KEM), but system-level security hardening (authentication, replay protection, secure bootstrapping) is not fully implemented.
 
@@ -64,4 +50,33 @@ This implementation is designed for studying:
 - Impact of BLE MTU / L2CAP fragmentation on PQKE performance
 - Communication vs computation trade-offs in embedded PQC systems
 
+---
 
+## Citation
+
+If you use this work, please cite:
+
+@misc{BLEConnectionPQKE,
+author = {Liu, Tao and Ramachandran, Gowri and Jurdak, Raja},
+title = {BLE Connection-Based Post-Quantum Key Exchange (PQKE)},
+year = {2026},
+howpublished = {\url{https://github.com/EsperLiu/BLE_Connection_PQKE}},
+note = {Supporting implementation of ML-KEM-based post-quantum key exchange over Bluetooth Low Energy. Used for the experimental evaluation in the SenSys 2026 paper: ``On the Energy Cost of Post-Quantum Key Establishment in Wireless Low-Power Personal Area Networks''.}
+}
+
+or the main energy study paper: 
+
+@inproceedings{10.1145/3774906.3802784,
+author = {Liu, Tao and Ramachandran, Gowri and Jurdak, Raja},
+title = {On the Energy Cost of Post-Quantum Key Establishment in Wireless Low-Power Personal Area Networks},
+year = {2026},
+booktitle = {Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems},
+series = {SenSys '26},
+pages = {1137--1143},
+location = {Saint Malo, France},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+doi = {10.1145/3774906.3802784},
+url = {https://doi.org/10.1145/3774906.3802784},
+keywords = {Post-Quantum Cryptography, Internet of Things, Personal Area Networks, Energy Estimation, Bluetooth Low Energy}
+}
